@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- icon -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-softViolet">
+  <main
+    class="mx-4 h-full max-w-4xl rounded-2xl bg-white shadow-xl shadow-neutral-900/70 flex flex-col relative sm:grid sm:grid-cols-2">
+    <img class="absolute product" src="./images/illustration-box-desktop.svg" alt="illustration-box-desktop"
+      aria-hidden="true">
+    <div class="imgs relative sm:truncate sm:w-full w-80">
+      <picture class="relative top-10 right-10">
+        <source media="(min-width:375px)" srcset="./images/illustration-woman-online-desktop.svg" aria-hidden="true">
+        <img src="./images/illustration-woman-online-mobile.svg" alt="illustration-woman-online-mobile"
+          aria-hidden="true" class="w-11/12">
+      </picture>
+      <picture class="absolute top-10 right-20">
+        <source media="(min-width:375px)" srcset="./images/bg-pattern-desktop.svg" aria-hidden="true">
+        <img src="./images/bg-pattern-mobile.svg" alt="bg-pattern-mobile" aria-hidden="true">
+      </picture>
+    </div>
+    <div>
+      <h1 class="uppercase font-bold text-xl pt-8 pb-4 text-center sm:text-left">faq</h1>
+      <div class="box sm:pr-12 px-6 sm:px-0">
+        <div class="flex sm:justify-between items-center">
+          <div class="question text-lg hover:text-softRed cursor-pointer">How many team members can I invite?</div>
+          <i class='bx bx-chevron-down text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+          <i class='hidden bx bx-chevron-up text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+        </div>
+        <div class="answer mb-4 text-sm hidden w-11/12">You can invite up to 2 additional users on the Free
+          plan. There is no
+          limit on
+          team members for the Premium plan.</div>
+        <hr class="mb-4">
+      </div>
+      <div class="box sm:pr-12 px-6 sm:px-0">
+        <div class="text-lg flex justify-between items-center">
+          <div class="question text-lg hover:text-softRed cursor-pointer">What is the maximum file upload size?</div>
+          <i class='bx bx-chevron-down text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+          <i class='hidden bx bx-chevron-up text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+        </div>
+        <div class="answer mb-4 text-sm hidden w-11/12">No more than 2GB. All files in your account must fit
+          your allotted
+          storage
+          space.
+        </div>
+        <hr class="mb-4">
+      </div>
+      <div class="box sm:pr-12 px-6 sm:px-0">
+        <div class="text-lg flex justify-between items-center">
+          <div class="question text-lg hover:text-softRed cursor-pointer">How do I reset my password?</div>
+          <i class='bx bx-chevron-down text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+          <i class='hidden bx bx-chevron-up text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+        </div>
+        <div class="answer mb-4 text-sm hidden w-11/12"> Click “Forgot password” from the login page or
+          “Change password” from
+          your
+          profile
+          page.
+          A reset link will be emailed to you.</div>
+        <hr class="mb-4">
+      </div>
+      <div class="box sm:pr-12 px-6 sm:px-0">
+        <div class=" text-lg flex justify-between items-center">
+          <div class="question text-lg hover:text-softRed cursor-pointer">Can I cancel my subscription?</div>
+          <i class='bx bx-chevron-down text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+          <i class='hidden bx bx-chevron-up text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+        </div>
+        <div class="answer mb-4 text-sm hidden w-11/12"> Yes! Send us a message and we’ll process your request
+          no questions
+          asked.
+        </div>
+        <hr class="mb-4">
+      </div>
+      <div class="box sm:pr-12 px-6 sm:px-0">
+        <div class="text-lg flex justify-between items-center">
+          <div class="question text-lg hover:text-softRed cursor-pointer"> Do you provide additional support?</div>
+          <i class='bx bx-chevron-down text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+          <i class='hidden bx bx-chevron-up text-3xl font-bold text-softRed whitespace-normal cursor-pointer'></i>
+        </div>
+        <div class="answer mb-4 text-sm hidden w-11/12"> Chat and email support is available 24/7. Phone lines
+          are open during
+          normal
+          business hours.</div>
+        <hr class="mb-20">
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>

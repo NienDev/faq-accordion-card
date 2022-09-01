@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.active{
+  font-weight: bold;
+}
+
+.active > .bx-chevron-up{
+  display: inline-block!important;
+}
+
+.active > .bx-chevron-up{
+  display: none;
+}
+
+.product{
+  left: -52px;
+  top: 166px;
+  z-index: 1;
+  width: 10rem;
+}
+
+@media (max-width: 496px) {
+  main{
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  .imgs{
+    top: -175px;
+    left: 90px;
+    width: 20rem;
+    margin-bottom: -8rem;
+  }  
+  .product{
+    left: -2px;
+    top: -63px;
+  }
+}
